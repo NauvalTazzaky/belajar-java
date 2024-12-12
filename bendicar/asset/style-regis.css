@@ -1,0 +1,191 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #1704ff;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "navbar bg"
+    "login bg";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 8vh 90vh;
+  width: 95%;
+  background-color: white;
+  border-radius: 15px;
+  margin: 30px auto;
+}
+
+.navbar {
+  grid-area: navbar;
+  width: 100%;
+  height: 8vh;
+}
+
+.icon {
+  padding-left: 20px;
+}
+
+.card {
+  width: 100%;
+  grid-area: login;
+}
+
+.login {
+  width: 500px;
+  height: 400px;
+  margin: 30px auto;
+}
+
+.h1-login {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.p-login {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 90%;
+  margin-left: 15px;
+  height: 40px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.p-input {
+  margin-left: 15px;
+}
+
+.input input::placeholder {
+  padding-left: 20px;
+}
+
+.input input {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+
+.p-almt {
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+textarea {
+  width: 90%;
+  height: 50px;
+  margin-left: 15px;
+}
+
+.btn {
+  width: 90%;
+  height: 40px;
+  border-radius: 7px;
+  margin-top: 20px;
+  background-color: #1704ff;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  margin-left: 15px;
+}
+
+.btn:hover {
+  background-color: black;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.bg {
+  width: 100%;
+  background-image: url(../image/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 920px;
+  grid-area: bg;
+}
+
+.footer {
+  width: 100%;
+  background-color: black;
+}
+
+.log {
+  width: 93%;
+  display: flex;
+  justify-content: end;
+}
+
+.log a {
+  color: black;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+span {
+  color: #1704ff;
+}
+
+@media screen and (min-width: 567px) {
+  .container {
+    display: grid;
+    grid-template-areas:
+      "navbar bg"
+      "login bg";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 8vh 80vh;
+    width: 95%;
+    background-color: white;
+    border-radius: 15px;
+    margin: 30px auto;
+  }
+
+  .input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .p-input {
+    margin-left: 0;
+  }
+
+  .p-almt {
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+
+  textarea {
+    width: 100%;
+    height: 50px;
+    margin-left: 0;
+  }
+
+  .log {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-right: 0;
+  }
+
+  .btn {
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    margin-top: 20px;
+    background-color: #1704ff;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,501 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 7vh 10vh 70vh 110vh 80vh 50vh 35vh;
+  grid-template-areas:
+    "contact"
+    "nav"
+    "head"
+    "main"
+    "keunggulan"
+    "about"
+    "footer";
+}
+
+.contact {
+  width: 100%;
+  grid-area: contact;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.mail {
+  width: 140px;
+  margin-left: 60px;
+}
+
+.sosmed {
+  width: 160px;
+  margin-left: 880px;
+}
+
+.map {
+  width: 180px;
+}
+
+.nav {
+  width: 100%;
+  grid-area: nav;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(219, 219, 219);
+}
+
+.car {
+  width: 600px;
+  position: absolute;
+  right: 100px;
+  top: 200px;
+}
+
+.icon {
+  width: 180px;
+  margin-left: 50px;
+  height: 70px;
+}
+
+.nav ul {
+  display: flex;
+  margin-right: 80px;
+}
+
+.nav ul li {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+.nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.head {
+  width: 100%;
+  grid-area: head;
+  background-image: url(../image/begee.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  width: 600px;
+  height: 400px;
+  margin-left: 80px;
+  margin-top: 40px;
+}
+
+.h1-title {
+  font-size: 70px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.p-title {
+  margin-bottom: 30px;
+  color: rgb(230, 230, 230);
+}
+
+.p-ttl {
+  margin-bottom: 10px;
+  color: #1000c6;
+}
+
+.btn-book {
+  width: 150px;
+  margin-right: 10px;
+  height: 40px;
+  background-color: #1704ff;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+}
+
+.btn-book:hover {
+  background-color: black;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.btn-learn:hover {
+  transition: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.btn-learn {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.main {
+  width: 100%;
+  grid-area: main;
+  background-color: rgb(219, 219, 219);
+}
+
+.title-main {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.card-main {
+  width: 90%;
+  height: 80%;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "card1 card2 card3"
+    "card4 card5 card6";
+  gap: 20px;
+  color: white;
+}
+
+.card1 {
+  width: 100%;
+  background-color: #00a4ff;
+  grid-area: card1;
+  border-radius: 15px;
+  color: white;
+}
+.card2 {
+  width: 100%;
+  background-color: #00a4ff;
+  grid-area: card2;
+  border-radius: 15px;
+}
+.card3 {
+  width: 100%;
+  background-color: #00a4ff;
+  grid-area: card3;
+  border-radius: 15px;
+}
+.card4 {
+  width: 100%;
+  background-color: #00a4ff;
+  grid-area: card4;
+  border-radius: 15px;
+}
+.card5 {
+  width: 100%;
+  background-color: #00a4ff;
+  grid-area: card5;
+  border-radius: 15px;
+}
+.card6 {
+  width: 100%;
+  background-color: #00a4ff;
+  grid-area: card6;
+  border-radius: 15px;
+}
+
+.isi-card {
+  width: 90%;
+  height: 87%;
+  margin: 20px auto;
+}
+
+.img1 {
+  width: 100%;
+  height: 18vh;
+  background-image: url(../image/1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.img2 {
+  width: 100%;
+  height: 18vh;
+  background-image: url(../image/2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.img3 {
+  width: 100%;
+  height: 18vh;
+  background-image: url(../image/3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.img4 {
+  width: 100%;
+  height: 18vh;
+  background-image: url(../image/1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.img5 {
+  width: 100%;
+  height: 18vh;
+  background-image: url(../image/1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.img6 {
+  width: 100%;
+  height: 18vh;
+  background-image: url(../image/1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.h1-img {
+  margin: 10px 0 10px 0;
+}
+
+.p-img {
+  margin: 10px 0 10px 0;
+}
+
+.btn-img {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  font-size: 13px;
+  font-weight: bold;
+  color: black;
+  background-color: rgb(237, 237, 237);
+}
+
+.btn-img:hover {
+  background-color: black;
+  color: white;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.keunggulan {
+  width: 100%;
+  grid-area: keunggulan;
+  background-color: rgb(219, 219, 219);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-about {
+  width: 90%;
+  height: 90%;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.title-about {
+  width: 725px;
+  height: 500px;
+  text-align: justify;
+  color: rgb(33, 33, 33);
+}
+.about {
+  width: 100%;
+  grid-area: about;
+  background-color: rgb(219, 219, 219);
+}
+
+.card-unggul {
+  width: 90%;
+  height: 80%;
+  margin: 35px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 15px;
+  grid-template-areas: "card-unggul1 card-unggul2 card-unggul3 card-unggul4";
+}
+
+.card-unggul1 {
+  width: 100%;
+  grid-area: card-unggul1;
+}
+
+.img-ung1 {
+  width: 150px;
+  height: 150px;
+  background-image: url(../image/fleksibel.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200px;
+  margin: 20px auto;
+  border-radius: 50%;
+}
+.img-ung2 {
+  width: 150px;
+  height: 150px;
+  background-image: url(../image/murah.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200px;
+  margin: 20px auto;
+  border-radius: 50%;
+}
+.img-ung3 {
+  width: 150px;
+  height: 150px;
+  background-image: url(../image/bnyk.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200px;
+  margin: 20px auto;
+  border-radius: 50%;
+}
+.img-ung4 {
+  width: 150px;
+  height: 150px;
+  background-image: url(../image/pilihan.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200px;
+  margin: 20px auto;
+  border-radius: 50%;
+}
+
+.p-ug {
+  text-align: justify;
+  color: rgb(33, 33, 33);
+}
+
+.p-ung {
+  width: 90%;
+  height: 60px;
+  margin: 10px auto;
+}
+
+.h3-ung {
+  text-align: center;
+}
+
+.card-unggul2 {
+  width: 100%;
+  grid-area: card-unggul2;
+}
+.card-unggul3 {
+  width: 100%;
+  grid-area: card-unggul3;
+}
+.card-unggul4 {
+  width: 100%;
+  grid-area: card-unggul4;
+}
+
+span {
+  color: #1704ff;
+}
+
+.footer {
+  width: 100%;
+  grid-area: footer;
+  background-color: #1704ff;
+  display: flex;
+  color: white;
+}
+
+.abot {
+  width: 100px;
+  height: 200px;
+  margin-left: 90px;
+  margin-top: 30px;
+}
+
+.p-footer {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.p-footer-judul {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.blog {
+  width: 100px;
+  height: 200px;
+  margin-top: 30px;
+  margin-left: 150px;
+}
+
+.prodak {
+  width: 100px;
+  height: 200px;
+  margin-top: 30px;
+  margin-left: 150px;
+}
+
+.logososmet {
+  width: 300px;
+  height: 200px;
+  margin-top: 30px;
+  margin-left: 450px;
+}
+
+.logo-footer {
+  width: 150px;
+  height: 50px;
+  background-image: url(../image/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 70px;
+}
+
+.pl-footer {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.sosmet {
+  width: 200px;
+  height: 50px;
+  background-image: url(../image/sosmed.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200px;
+  margin-left: 50px;
+}
+
+.footer-bot {
+  width: 80%;
+}
